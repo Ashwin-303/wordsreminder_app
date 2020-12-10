@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ActivityIndicator should match snapshot 1`] = `
+<ActivityIndicator
+  accessibilityHint="Loading"
+  animating={true}
+  color="#ffffff"
+  hidesWhenStopped={true}
+  size="small"
+  style={
+    Object {
+      "padding": 10,
+    }
+  }
+/>
+`;
