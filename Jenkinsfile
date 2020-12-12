@@ -6,7 +6,7 @@ node('Windows') {
         }
         stage('Navigate to android directory') {
 
-           cd /d D:\demo_app\wordsreminder\android
+            cd /d D:\demo_app\wordsreminder\android
 
         }
 
