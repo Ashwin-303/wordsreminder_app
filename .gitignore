@@ -65,3 +65,4 @@ serviceAccountKey.json
 ios/WordsReminder/GoogleService-Info.plist
 android/app/google-services.json
 e2e/google-services.json
+"android/java_pid11792.hprof" 

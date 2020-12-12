@@ -21,7 +21,7 @@ export const AuthLoadingScreen = () => {
     return (
       <MainView>
         <View style={styles.container}>
-          <Text fontSize={38}>Loading...</Text>
+          <Text fontSize={38}>Loadingmagic...</Text>
         </View>
       </MainView>
     );

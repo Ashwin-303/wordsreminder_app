@@ -125,7 +125,7 @@ export class SignInScreen extends React.Component<Props, State> {
         }
         link={
           <Text fontSize={16} onPress={this.handleSignUpPress} testID={SIGNIN_LINK_SIGNUP}>
-            Sign up
+            Sign upppp
           </Text>
         }
         submitButton={
