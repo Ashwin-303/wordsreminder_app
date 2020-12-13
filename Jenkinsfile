@@ -13,11 +13,11 @@ node('Windows') {
 
         stage('Build'){
 
-            if (env.BRANCH_NAME == 'master'){
+            //if (env.BRANCH_NAME == 'master'){
         
-                bat 'bundle exec fastlane beta'
+                bundle exec fastlane beta
             
-            }
+            //}
             /*if (env.BRANCH_NAME == 'preprod'){
                 sh ""
             }
