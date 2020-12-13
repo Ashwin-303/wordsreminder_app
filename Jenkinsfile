@@ -15,7 +15,7 @@ node('Windows') {
 
             //if (env.BRANCH_NAME == 'master'){
         
-                bundle exec fastlane beta
+                bat 'bundle exec fastlane beta'
             
             //}
             /*if (env.BRANCH_NAME == 'preprod'){
