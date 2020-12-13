@@ -4,12 +4,16 @@ node('Windows') {
             checkout scm
             //notifySlack('STARTED')
         }
-        stage('Navigate to android directory') {
 
-            bat 'cd /d D:\\demo_app\\wordsreminder\\android'
+        stage('Clean & Prepare') {
+            dir("D:\\demo_app\\wordsreminder\\android") {  
+                bat './gradlew clean'
+            }
         }
-        
-        
+
+        stage('Navigate to android directory') {
+                bat 'cd /d D:\\demo_app\\wordsreminder\\android'    
+        }
 
         stage('Build'){
 
