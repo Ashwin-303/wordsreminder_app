@@ -14,9 +14,9 @@ node('Windows') {
         stage('Build'){
 
             //if (env.BRANCH_NAME == 'master'){
-        
-                bat 'bundle exec fastlane beta'
-            
+                dir("D:\\demo_app\\wordsreminder\\android") {
+                    bat 'bundle exec fastlane beta'
+                }
             //}
             /*if (env.BRANCH_NAME == 'preprod'){
                 sh ""
