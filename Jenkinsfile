@@ -4,17 +4,20 @@ node('Windows') {
             checkout scm
             //notifySlack('STARTED')
         }
-        stage('Navigate to android directory') {
+        /*stage('Navigate to android directory') {
 
             bat 'cd /d D:\demo_app\wordsreminder\android'
 
         }
+        */
         
 
         stage('Build'){
 
             if (env.BRANCH_NAME == 'master'){
-                bundle exec fastlane beta
+                dir("D:\demo_app\wordsreminder\android") {
+                    bundle exec fastlane beta
+                }
             }
             /*if (env.BRANCH_NAME == 'preprod'){
                 sh ""
