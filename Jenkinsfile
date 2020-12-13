@@ -15,7 +15,7 @@ node('Windows') {
         stage('Build'){
 
             if (env.BRANCH_NAME == 'master'){
-                dir("D:\demo_app\wordsreminder\android") {
+                dir("D:demo_app\wordsreminder\android") {
                     bundle exec fastlane beta
                 }
             }
